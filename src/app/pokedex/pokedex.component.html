@@ -1,0 +1,12 @@
+<h3>Pokedex, enter a pokemon id here</h3>
+<form (submit)="getPokemon()">
+	<p>ID: <input type="text" name="id"
+		[(ngModel)]="id"
+	></p>
+	<input type="submit" name="">
+</form>
+
+<div *ngIf="imageSrc">
+	<h3>{{name}}</h3>
+	<img [src]="imageSrc">
+</div>

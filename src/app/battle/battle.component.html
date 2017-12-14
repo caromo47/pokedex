@@ -1,0 +1,29 @@
+<h3>Pokedex, enter a pokemon id here</h3>
+<fieldset>
+	<h4>Pokemon 1</h4>
+	<form (submit)="getPokemon1()">
+		<p>ID: <input type="text" name="id"
+			[(ngModel)]="id1"
+		></p>
+		<input type="submit" name="">
+	</form>
+
+	<div *ngIf="imageSrc1">
+		<h3>{{name1}}</h3>
+		<img [src]="imageSrc1">
+	</div>
+</fieldset>
+<fieldset>
+	<h4>Pokemon 2</h4>
+	<form (submit)="getPokemon2()">
+		<p>ID: <input type="text" name="id"
+			[(ngModel)]="id2"
+		></p>
+		<input type="submit" name="">
+	</form>
+
+	<div *ngIf="imageSrc2">
+		<h3>{{name2}}</h3>
+		<img [src]="imageSrc2">
+	</div>
+</fieldset>
